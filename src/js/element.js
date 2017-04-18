@@ -3,3 +3,4 @@ var renderElement = function () {
     element.innerHTML = 'Hello World!!!';
     return element;
 };
+export default renderElement;
