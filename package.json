@@ -4,7 +4,8 @@
     "description": "A simple tutorial to understand how webpack can be used as a module bundler and also how wepack-dev-server can be used for faster development",
     "main": "index.js",
     "scripts": {
-        "webpack": "./node_modules/.bin/webpack"
+        "webpack": "./node_modules/.bin/webpack",
+		"webpack-dev-server": "./node_modules/.bin/webpack-dev-server --open"
     },
     "repository": {
         "type": "git",
@@ -13,7 +14,8 @@
     "author": "Sonu Kumar Singh",
     "homepage": "https://github.com/singhsonu778/Webpack",
     "devDependencies": {
-        "webpack": "^2.4.1"
+        "webpack": "^2.4.1",
+        "webpack-dev-server": "^2.4.2"
     },
     "dependencies": {
         "babel-core": "^6.24.1",
