@@ -1,5 +1,5 @@
 import React from 'react';
-import {render} from 'react-dom';
-import Element from './element';
+import ReactDOM from 'react-dom';
+import MovieList from './movieList';
 
-render(<Element/>, document.getElementById('root'));
+ReactDOM.render(<MovieList/>, document.getElementById('root'));
