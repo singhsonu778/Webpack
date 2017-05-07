@@ -10,7 +10,8 @@ module.exports = {
     resolve: {
         alias: {
             Movie: path.resolve(__dirname, 'src/js/movie.js'),
-            MovieList: path.resolve(__dirname, 'src/js/movieList.js')
+            MovieList: path.resolve(__dirname, 'src/js/movieList.js'),
+            Styles: path.resolve(__dirname, 'src/scss/movies.scss'),
         }
     },
     module: {

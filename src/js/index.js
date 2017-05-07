@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MovieList from 'MovieList';
-import '../scss/movies.scss';
+import 'Styles';
 
 ReactDOM.render(<MovieList/>, document.getElementById('root'));
