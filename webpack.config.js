@@ -33,5 +33,6 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({template: './src/template/template.html'})
-    ]
+    ],
+    devtool: 'cheap-module-eval-source-map'
 };
