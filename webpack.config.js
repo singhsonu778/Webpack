@@ -12,6 +12,7 @@ module.exports = {
             Movie: path.resolve(__dirname, 'src/js/movie.js'),
             MovieList: path.resolve(__dirname, 'src/js/movieList.js'),
             Styles: path.resolve(__dirname, 'src/scss/movies.scss'),
+            Foundation: path.resolve(__dirname, 'node_modules/foundation-sites/dist/css/foundation.min.css')
         }
     },
     module: {
@@ -19,6 +20,10 @@ module.exports = {
 			{
 				test: /\.js$/,
 				use: 'babel-loader'
+			},
+			{
+				test: /\.css$/,
+				use: ['style-loader', 'css-loader']
 			},
 			{
 				test: /\.scss$/,

@@ -22,9 +22,9 @@ var Movie = React.createClass({
 	displayInfo: function() {
 		return (
 				<div>
-                	<h1>{this.props.children}</h1>
-					<button onClick={this.edit}>Edit</button>
-					<button onClick={this.remove}>Remove</button>
+                	<h3>{this.props.children}</h3>
+					<button className='button warning' onClick={this.edit}>Edit</button>
+					<button className='button alert' onClick={this.remove}>Remove</button>
 				</div>
 		);
 	},
@@ -32,8 +32,8 @@ var Movie = React.createClass({
 	editInfo: function() {
 		return (
 				<div>
-                	<textarea ref='movieName' defaultValue={this.props.children}></textarea><br/>
-					<button onClick={this.save}>Save</button>
+                	<textarea ref='movieName' defaultValue={this.props.children}></textarea>
+					<button className='button success' onClick={this.save}>Save</button>
 				</div>
 		);
 	},
