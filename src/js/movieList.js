@@ -34,13 +34,8 @@ var MovieList = React.createClass({
 	render: function() {
 		return (
 			<div>
-				<h1 className='top-bar'>React App Using Webpack Live Reloading</h1>
-				<div className='row'>
-					<button className='button large' onClick={this.addMovie.bind(null, 'Enter movie name here')}>Add New Movie</button>
-					<div className='columns medium-6 large-4 small-centered'>
-						{this.state.movies.map(this.renderMovie)}
-					</div>
-				</div>
+				<button className='button large' onClick={this.addMovie.bind(null, 'Enter movie name here')}>Add New Movie</button>
+				{this.state.movies.map(this.renderMovie)}
 			</div>
 		);
 	}

@@ -29,6 +29,7 @@
         "foundation-sites": "^6.3.1",
         "html-webpack-plugin": "^2.28.0",
         "react": "^15.5.4",
-        "react-dom": "^15.5.4"
+        "react-dom": "^15.5.4",
+        "react-router": "^2.0.0"
     }
 }
