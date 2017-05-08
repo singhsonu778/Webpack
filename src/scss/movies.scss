@@ -10,4 +10,8 @@ $common-margin: 10px;
     .columns button {
         margin: $common-margin !important;
     }
+
+    button.expanded {
+        margin: 0px !important;
+    }
 }

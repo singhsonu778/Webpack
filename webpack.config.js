@@ -11,6 +11,10 @@ module.exports = {
         alias: {
             Movie: path.resolve(__dirname, 'src/js/movie.js'),
             MovieList: path.resolve(__dirname, 'src/js/movieList.js'),
+            WeatherView: path.resolve(__dirname, 'src/js/weatherView.js'),
+            WeatherForm: path.resolve(__dirname, 'src/js/weatherForm.js'),
+            Weather: path.resolve(__dirname, 'src/js/weather.js'),
+            WeatherAPI: path.resolve(__dirname, 'src/api/weatherAPI.js'),
             Contact: path.resolve(__dirname, 'src/js/contact.js'),
             About: path.resolve(__dirname, 'src/js/about.js'),
             Main: path.resolve(__dirname, 'src/js/main.js'),
