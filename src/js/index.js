@@ -7,7 +7,11 @@ import Contact from 'Contact';
 import About from 'About';
 import Main from 'Main';
 import 'Styles';
-import 'Foundation';
+import 'FoundationCSS';
+import 'script-loader!jquery';
+import 'FoundationJS';
+
+$(document).foundation();
 
 ReactDOM.render(
     <Router history = {hashHistory}>

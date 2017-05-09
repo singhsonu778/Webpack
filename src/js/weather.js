@@ -2,6 +2,7 @@ var React = require('react');
 var WeatherView = require('WeatherView');
 var WeatherForm = require('WeatherForm');
 var WeatherAPI = require('WeatherAPI');
+var ErrorView = require('ErrorView');
 
 var Weather = React.createClass({
     getInitialState: function(){
@@ -15,6 +16,7 @@ var Weather = React.createClass({
 
         this.setState({
             isLoading: true,
+            errorMessage: undefined,
             city: undefined,
             temp: undefined
         });
@@ -25,6 +27,11 @@ var Weather = React.createClass({
                 temp: temp,
                 isLoading: false
             });
+        }, function(err){
+            thisVar.setState({
+                isLoading: false,
+                errorMessage: 'Sorry! An error has occurred.'
+            });
         });
     },
 
@@ -32,6 +39,7 @@ var Weather = React.createClass({
         var city = this.state.city;
         var temp = this.state.temp;
         var isLoading = this.state.isLoading;
+        var errorMessage = this.state.errorMessage;
 
         function renderMessage(){
             if(isLoading){
@@ -41,11 +49,20 @@ var Weather = React.createClass({
             }
         }
 
+        function renderError () {
+            if (typeof errorMessage === 'string') {
+                return (
+                    <ErrorView message={errorMessage}/>
+                );
+            }
+        }
+
         return (
             <div>
                 <h3>Weather</h3>
                 <WeatherForm updateData={this.saveData}/>
                 {renderMessage()}
+                {renderError()}
             </div>
         );
     }

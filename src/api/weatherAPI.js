@@ -10,7 +10,11 @@ module.exports = {
         return axios.get(url).then(function(response) {
             if (response.data.main.temp) {
                 return response.data.main.temp;
-            } 
+            } else {
+                throw new Error(response.data);
+            }
+        }, function(response) {
+            throw new Error(response.data);
         });
     }
 };

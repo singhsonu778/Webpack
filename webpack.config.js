@@ -19,8 +19,10 @@ module.exports = {
             About: path.resolve(__dirname, 'src/js/about.js'),
             Main: path.resolve(__dirname, 'src/js/main.js'),
             NavigationBar: path.resolve(__dirname, 'src/js/nav.js'),
+            ErrorView: path.resolve(__dirname, 'src/js/error.js'),
             Styles: path.resolve(__dirname, 'src/scss/movies.scss'),
-            Foundation: path.resolve(__dirname, 'node_modules/foundation-sites/dist/css/foundation.min.css')
+            FoundationCSS: path.resolve(__dirname, 'node_modules/foundation-sites/dist/css/foundation.min.css'),
+            FoundationJS: path.resolve(__dirname, 'node_modules/foundation-sites/dist/js/foundation.min.js')
         }
     },
     module: {

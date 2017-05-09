@@ -1,2 +1,2 @@
 # Webpack
-A simple tutorial to understand how webpack can be used as a module bundler and also how wepack-dev-server can be used for faster development
+A project to understand how to develop node based 'Single Page Application' using react, foundation, webpack, wepack-dev-server for faster development.
