@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "webpack": "./node_modules/.bin/webpack",
-        "webpack-dev-server": "./node_modules/.bin/webpack-dev-server --open"
+        "webpack-dev-server": "./node_modules/.bin/webpack-dev-server --open --watch"
     },
     "repository": {
         "type": "git",
